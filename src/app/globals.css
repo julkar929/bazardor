@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@plugin "daisyui" { themes: false; }
+@plugin "daisyui/theme" {
+  name: "bazardor";
+  default: true;
+  color-scheme: light;
+  --color-base-100: rgb(250, 252, 250);
+  --color-base-200: rgb(240, 245, 240);
+  --color-base-300: rgb(225, 232, 225);
+  --color-base-content: rgb(29, 39, 31);
+  --color-primary: rgb(5, 137, 62);
+  --color-primary-content: rgb(243, 251, 244);
+  --color-secondary: rgb(26, 153, 81);
+  --color-secondary-content: rgb(255, 255, 255);
+  --color-accent: rgb(26, 153, 81);
+  --color-accent-content: rgb(255, 255, 255);
+  --color-neutral: rgb(29, 39, 31);
+  --color-neutral-content: rgb(250, 252, 250);
+  --color-info: rgb(40, 120, 200);
+  --color-info-content: rgb(255, 255, 255);
+  --color-success: rgb(26, 153, 81);
+  --color-success-content: rgb(255, 255, 255);
+  --color-warning: rgb(230, 160, 20);
+  --color-warning-content: rgb(40, 30, 0);
+  --color-error: rgb(208, 55, 57);
+  --color-error-content: rgb(255, 246, 245);
+  --radius-selector: 0.5rem;
+  --radius-field: 0.5rem;
+  --radius-box: 0.75rem;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: "Noto Sans Bengali", "Hind Siliguri", "Kalpurush", system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--color-base-200);
+  color: var(--color-base-content);
+}
+html { scroll-padding-top: 6rem; }
+
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.ticker-track { animation: ticker 60s linear infinite; width: max-content; }
+.ticker-wrap:hover .ticker-track { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) { .ticker-track { animation-duration: 240s; } }
