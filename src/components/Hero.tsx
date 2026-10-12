@@ -21,7 +21,7 @@ export default function Hero() {
           <p className="mt-4 max-w-xl text-base text-base-content/70">
             চাল, ডাল, তেল, সবজি, মাছ, মাংস, ডিম ও দুধ — বাজারভিত্তিক বিস্তারিত, গড়, সর্বনিম্ন-সর্বাধিক এবং দামের পরিবর্তন এক জায়গায়।
           </p>
-          <a href="#সব-পণ্য" className="btn btn-primary mt-6 shadow-md">সব পণ্য দেখুন</a>
+          <a href="#all" className="btn btn-primary mt-6 shadow-md">সব পণ্য দেখুন</a>
         </div>
         <div className="flex justify-center">
           <Image src="/hero.png" alt="ফল ও সবজির ঝুড়ি" width={320} height={260} priority className="h-auto w-full max-w-xs md:max-w-sm" />

@@ -21,7 +21,7 @@ export default async function HomePage() {
           <ProductGrid products={fallers} />
         </section>
         <section>
-          <SectionHeader id="সব-পণ্য" title="সব পণ্য" subtitle="সব ক্যাটেগরির নিত্যপ্রয়োজনীয় পণ্যের আজকের দাম" />
+          <SectionHeader id="all" title="সব পণ্য" subtitle="সব ক্যাটেগরির নিত্যপ্রয়োজনীয় পণ্যের আজকের দাম" />
           <ProductGrid products={products} />
         </section>
       </div>
